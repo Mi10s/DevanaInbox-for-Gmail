@@ -1,0 +1,27 @@
+{
+
+    "content_scripts": [
+        {
+            "js": [  "js/devanainbox-chrome-extension.js"],
+            "css": [ "css/bootstrap.css", "css/bootstrap-theme.css", "css/design.css" ,"css/jquery.datetimepicker.css" ],
+            "matches": [ "https://mail.google.com/*", "http://mail.google.com/*" ],
+            "run_at": "document_end"
+        }
+    ],
+
+    "icons": {
+        "16": "img/devana.png",
+        "48": "img/devana.png",
+        "128": "img/devana.png"
+
+    },
+    "permissions": [ "tabs", "https://mail.google.com/"
+    ],
+
+    "manifest_version": 2,
+    "name": "Devana Inbox for Gmail",
+    "version": "1.0",
+    "default_locale": "en",
+    "description": "DevanaInbox is a free, opensource extension that will enhance your Gmail inbox with useful options based on Eisenhower Matrix.",
+    "author": "Devana Bootcamp - AIESEC DoIT 2014 - Ramiz Trtovac, Milos Stojicevic"
+}
